@@ -27,7 +27,6 @@ main()
 
     system("cls");
 
-    cout << "SCORE: " << score;
     cout << endl;
     cout << endl;
     cout << endl;
@@ -116,7 +115,9 @@ main()
                 eraseP(pacmanX, pacmanY);
                 pacmanX = pacmanX - 1;
                 printP(pacmanX, pacmanY);
-                score++;
+                score = score + incremenent;
+                gotoxy(1, 1);
+                cout << "SCORE: " << score;
             }
         }
         if (GetAsyncKeyState(VK_RIGHT))
@@ -133,7 +134,9 @@ main()
                 eraseP(pacmanX, pacmanY);
                 pacmanX = pacmanX + 1;
                 printP(pacmanX, pacmanY);
-                score++;
+                score = score + incremenent;
+                gotoxy(1, 1);
+                cout << "SCORE: " << score;
             }
         }
         if (GetAsyncKeyState(VK_UP))
@@ -150,7 +153,9 @@ main()
                 eraseP(pacmanX, pacmanY);
                 pacmanY = pacmanY - 1;
                 printP(pacmanX, pacmanY);
-                score++;
+                score = score + incremenent;
+                gotoxy(1, 1);
+                cout << "SCORE: " << score;
             }
         }
         if (GetAsyncKeyState(VK_DOWN))
@@ -167,7 +172,9 @@ main()
                 eraseP(pacmanX, pacmanY);
                 pacmanY = pacmanY + 1;
                 printP(pacmanX, pacmanY);
-                score++;
+                score = score + incremenent;
+                gotoxy(1, 1);
+                cout << "SCORE: " << score;
             }
         }
         if (GetAsyncKeyState(VK_ESCAPE))
